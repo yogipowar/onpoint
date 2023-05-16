@@ -64,6 +64,12 @@ body.popupopen {
   transition: 0.3s all ease;
 }
 
+@media screen and (min-width: 992px) {
+  .custom-nav.sticky-header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+
 .navbar-dark.custom-nav.sticky-header .navbar-nav .nav-link {
   color: #011b28;
 }
@@ -1043,6 +1049,7 @@ section.full-content:before {
   min-height: 120px;
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .nc-head h4 {
@@ -1149,7 +1156,7 @@ section.full-content:before {
 #footer {
   background: #011b28;
   padding: 100px 0px;
-  // margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .footer-logo img {
@@ -1679,7 +1686,7 @@ span.closepopup {
 
   /* .hcs-right.hcs-item {
   padding-left: 0;
-  } */
+} */
 
   .hcs-wrapper.slide-two .hero-btn-wrap,
   .hcs-wrapper.slide-three .hero-btn-wrap {
@@ -1750,13 +1757,8 @@ span.closepopup {
   .full-content-wrap {
     padding: 40px 0px;
   }
-
-  .custom-container.csc-wrap{
-    padding-left: 15px;
-  }
   .custom-container.csc-wrap .row {
-    /* padding-left: 1rem; */
-    padding-left: 0;
+    padding-left: 1rem;
   }
   .cs-card-content {
     padding: 20px;

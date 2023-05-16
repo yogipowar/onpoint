@@ -383,7 +383,7 @@
 
       <div class="container pt-5">
         <div class="row align-items-center">
-          <div class="col-md-5 col-sm-12">
+          <div class="col-md-5 col-sm-6">
             <div class="section-title">
               <h2 class="heading-font">
                 End-to-End Digital Transformation Services
@@ -391,7 +391,7 @@
             </div>
           </div>
 
-          <div class="col-lg-5 col-md-7 col-sm-12">
+          <div class="col-lg-5 col-md-7 col-sm-6">
             <div class="section-title-tagline">
               <p>
                 The perfect blend of mature processes, flexible delivery models,
@@ -2153,6 +2153,65 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script>
+      function scrollToMiddle(sectionId) {
+        // Calculate the target position to scroll to (middle of the screen)
+        const section = document.getElementById(sectionId);
+        const sectionRect = section.getBoundingClientRect();
+        const offsetTop =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop ||
+          0;
+        const targetPosition =
+          offsetTop +
+          sectionRect.top +
+          sectionRect.height / 2 -
+          window.innerHeight / 2;
+
+        // Scroll smoothly to the target position
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+
+      // Add event listeners to the navigation links
+
+      document
+        .querySelector('a[href="#our__services"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default link behavior
+          scrollToMiddle("our__services"); // Call the scrollToMiddle function with the section ID
+        });
+
+      document
+        .querySelector('a[href="#PortFolio"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default link behavior
+          scrollToMiddle("PortFolio"); // Call the scrollToMiddle function with the section ID
+        });
+
+      document
+        .querySelector('a[href="#howitworks"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default link behavior
+          scrollToMiddle("howitworks"); // Call the scrollToMiddle function with the section ID
+        });
+
+      document
+        .querySelector('a[href="#Why-Choose-Us"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default link behavior
+          scrollToMiddle("Why-Choose-Us"); // Call the scrollToMiddle function with the section ID
+        });
+
+      document
+        .querySelector('a[href="#testimonials"]')
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default link behavior
+          scrollToMiddle("testimonials"); // Call the scrollToMiddle function with the section ID
+        });
+
       var whyUsMainFrame = {
         slidesToShow: 1,
 
